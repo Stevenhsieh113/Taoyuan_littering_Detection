@@ -1,11 +1,4 @@
-# Taoyuan_littering_Detection
----
-title: 第二階段流程
-
----
-
-
-
+# Taoyuan_littering_Detection_第二階段流程
 # 簡介
 ## input準備
 split_trash_labels.py
