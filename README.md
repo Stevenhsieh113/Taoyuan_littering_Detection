@@ -3,6 +3,7 @@
 ## input準備
 split_trash_labels.py
 split_8class_labels.py
+get_txt.py
 
 ## 第二階段input
 垃圾模擬：new_new_mock_trash_csv.py (替換成第一階段結果)
@@ -35,6 +36,9 @@ visualize_fn_pred_frames.py（可跑可不跑）
 
 -----
 # 按流程順序執行
+
+## 0. get_txt.py
+讀取yolo格是(CVAT)匯出的zip，產生三種狀態的txt
 
 ## 1. split_trash_labels.py
 把原始 YOLO 垃圾框（class 2）對上 XML 的 State，拆成一般垃圾 / 飛行垃圾，並去掉人、車。(有很多空白檔案是正常的，因為只有有出現Trash才會有內容)
