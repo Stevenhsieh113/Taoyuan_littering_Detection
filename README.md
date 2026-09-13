@@ -38,8 +38,9 @@ visualize_fn_pred_frames.py（可跑可不跑）
 # 按流程順序執行
 
 ## 0. get_txt.py
-讀取yolo格是(CVAT)匯出的zip，產生三種狀態的txt
+讀取yolo格式(CVAT)匯出的zip，產生三種狀態的txt
 
+(下面1和2是針對狀態去做處理)
 ## 1. split_trash_labels.py
 把原始 YOLO 垃圾框（class 2）對上 XML 的 State，拆成一般垃圾 / 飛行垃圾，並去掉人、車。(有很多空白檔案是正常的，因為只有有出現Trash才會有內容)
 
