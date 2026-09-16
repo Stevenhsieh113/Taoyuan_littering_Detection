@@ -59,6 +59,15 @@ visualize_fn_pred_frames.py（可跑可不跑）
 輸入：image/、labels_split/
 輸出：mock_trash_results.csv (模擬垃圾資料)
 
+## 3*. Get_Trash_Predict.py(需要第一階段才跑這個，跑3*就不用跑3)
+拿第一階段訓練好的best.pt，放在/weights底下，得到預測出來的垃圾位置
+
+輸入：
+* 模型：weights\yolo11l_trash_best.pt
+* 圖片：image/（底下所有 .png / .jpg）
+
+輸出：mock_trash_results.csv
+
 ## 4. test_yolo11n_find_car_and_person.py
 用 YOLO11n 掃圖片，偵測人與車（COCO：0,1,2,3,5,7）。
 
