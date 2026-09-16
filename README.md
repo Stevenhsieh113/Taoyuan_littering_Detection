@@ -53,13 +53,13 @@ visualize_fn_pred_frames.py（可跑可不跑）
 輸入：根目錄 *.xml、對應的 某影片_txt/*.txt
 輸出：labels_8class/（class 0–7，給後面做 GT）
 
-## 3. new_new_mock_trash_csv.py(要替換成yolo第一階段結果)
+## 3. new_new_mock_trash_csv.py(直接拿垃圾的真實位置來做模擬)
 把 labels_split 的 YOLO 框轉成和人車 CSV 相同格式，當成「垃圾偵測結果」（信心度固定 1.0）。
 
 輸入：image/、labels_split/
 輸出：mock_trash_results.csv (模擬垃圾資料)
 
-## 3*. Get_Trash_Predict.py(需要第一階段才跑這個，跑3*就不用跑3)
+## 3*. Get_Trash_Predict.py(需要第一階段跑完才跑這個，跑3*就不用跑3)
 拿第一階段訓練好的best.pt，放在/weights底下，得到預測出來的垃圾位置
 
 輸入：
